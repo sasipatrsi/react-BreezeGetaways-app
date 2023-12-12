@@ -509,9 +509,11 @@ Navbar
   overflow: hidden;
   transition: var(--transition);
 }
-.show-links {
+
+/* .show-links {
   height: 280px;
-}
+} */
+
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
   /* hide nav toggle button */

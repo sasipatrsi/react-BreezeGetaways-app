@@ -1,5 +1,4 @@
 import Logo from '../images/logo.svg'
-import React from 'react'
 import { pageLinks, socialLinks } from '../data'
 
 const Navbar = () => {
@@ -7,7 +6,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={Logo} className="nav-logo" alt="backroads" />
+          {/* <img src="./images/logo.svg" class="nav-logo" alt="BreezeGetaways" /> */}
+          <img src={Logo} className="nav-logo" alt="BreezeGetaways" />
           <button type="button" className="nav-toggle" id="nav-toggle">
             <i className="fas fa-bars"></i>
           </button>
@@ -17,19 +17,20 @@ const Navbar = () => {
 
         <ul className="nav-links" id="nav-links">
           {pageLinks.map((link) => {
+            const { id, href, text } = link;
             return (
-              <li key={link.id}>
-                <a href={link.href} className="nav-link">
-                  {link.text}
+              <li key={id}>
+                <a href={href} className="nav-link">
+                  {text}
                 </a>
               </li>
-            )
+            );
           })}
         </ul>
 
         <ul className="nav-icons">
           {socialLinks.map((link) => {
-            const { id, href, icon } = link
+            const { id, href, icon } = link;
             return (
               <li key={id}>
                 <a
@@ -41,7 +42,7 @@ const Navbar = () => {
                   <i className={icon}></i>
                 </a>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
