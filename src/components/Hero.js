@@ -4,10 +4,9 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-banner">
-        <h1>Backroads App</h1>
+        <h1>BreezeGetaways</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          explicabo debitis est autem dicta.
+          Browse our curated tours and start your virtual expedition today, Adventure awaits!.
         </p>
         <a href="#tours" className="btn hero-btn">
           explore tours
