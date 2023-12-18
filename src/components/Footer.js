@@ -33,6 +33,7 @@ const Footer = () => {
         copyright &copy; BreezeGetaways travel tours company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved
       </p>
+      
     </footer>
   )
 }
